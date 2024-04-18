@@ -8,6 +8,6 @@ namespace CodigoClase10.Interfaces
 {
     public interface ISueldoBonificable
     {
-        void CalcularBonificacion();
+       public void CalcularBonificacion();
     }
 }

@@ -13,12 +13,12 @@ namespace CodigoClase10.Clases
 
         public override void CalcularSueldo()
         {
-            throw new NotImplementedException();
+            SueldoNeto = SueldoBase;
         }
 
         public override string ObtenerTipoEmpleado()
         {
-            throw new NotImplementedException();
+            return "Desarrollador";
         }
     }
 }

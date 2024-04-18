@@ -8,7 +8,7 @@ namespace CodigoClase10.Interfaces
 {
     public interface IEmpleado
     {
-        void CalcularSueldo();
-        void MostrarDetalles();
+       public void CalcularSueldo();
+        public void MostrarDetalles();
     }
 }

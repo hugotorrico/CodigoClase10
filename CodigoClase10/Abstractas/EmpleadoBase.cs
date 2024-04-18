@@ -12,14 +12,18 @@ namespace CodigoClase10.Abstractas
         public string Nombre { get; set; }
         public int IdEmpleado { get; set; }
         public string Puesto { get; set; }
-
+        public double SueldoNeto { get; set; }
         public abstract double SueldoBase { get; }
-
+      
+        //abstract: Obliga que se implemente
         public abstract void CalcularSueldo();
+
         public abstract string ObtenerTipoEmpleado();
+        
+        //virtual: Te da la opción a que puedas sobreescribir
         public virtual void MostrarDetalles()
         {
-            Console.WriteLine($"Nombre: {Nombre}, ID Empleado: {IdEmpleado}, Puesto: {Puesto}");
+            Console.WriteLine($"Nombre: {Nombre}, ID Empleado: {IdEmpleado}, Puesto: {Puesto}, SueldoNeto: {SueldoNeto}");
         }
 
         
