@@ -1,4 +1,5 @@
 ﻿using CodigoClase10.Abstractas;
+using CodigoClase10.Estaticas;
 using CodigoClase10.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ namespace CodigoClase10.Clases
 
         public void CalcularBonificacion()
         {
-            Bonificacion = 1000;
+            Bonificacion = Constante.Bonificacion1;
         }
 
         public override void CalcularSueldo()
@@ -26,7 +27,7 @@ namespace CodigoClase10.Clases
 
         public void DescontarSueldo()
         {
-            Descuento = SueldoBase * 0.1;
+            Descuento = SueldoBase * Constante.Descuento1;
 
 
         }
