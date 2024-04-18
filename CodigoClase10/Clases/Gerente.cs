@@ -8,21 +8,22 @@ using System.Threading.Tasks;
 
 namespace CodigoClase10.Clases
 {
-    internal class Gerente : EmpleadoBase,ISueldoBonificable
+    internal class Gerente : EmpleadoBase,ISueldoBonificable,IDescuentoImpuesto
     {
         public override double SueldoBase => 8000;
         public double Bonificacion { get; set; }
+        public double Descuento { get; set; }
 
 
         public void CalcularBonificacion()
         {
             Bonificacion = 2000;
         }
-
+       
         public override void CalcularSueldo()
         {
             
-            SueldoNeto = SueldoBase+Bonificacion;
+            SueldoNeto = SueldoBase+Bonificacion-Descuento;
         }
 
         public override string ObtenerTipoEmpleado()
@@ -39,7 +40,9 @@ namespace CodigoClase10.Clases
             //Console.WriteLine($"Nombre: {Nombre}, ID Empleado: {IdEmpleado}, Puesto: {Puesto}, SueldoNeto: {SueldoNeto}, Bonificación: {Bonificacion}");
         }
 
-
-
+        public void DescontarSueldo()
+        {
+            Descuento = SueldoBase * 0.2;
+        }
     }
 }
