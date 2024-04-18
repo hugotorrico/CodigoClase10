@@ -9,7 +9,7 @@ namespace CodigoClase10.Clases
 {
     public class Desarrollador : EmpleadoBase
     {
-        public override double SueldoBase => 1000;
+        public override double SueldoBase => 3000;
 
         public override void CalcularSueldo()
         {

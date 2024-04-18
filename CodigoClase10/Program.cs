@@ -2,13 +2,6 @@
 using CodigoClase10.Interfaces;
 
 
-Desarrollador desarrollador = new Desarrollador();
-desarrollador.MostrarDetalles();
-
-Gerente gerente = new Gerente();
-gerente.MostrarDetalles();
-
-
 
 List<IEmpleado> empleados = new List<IEmpleado>
         {
@@ -18,7 +11,6 @@ List<IEmpleado> empleados = new List<IEmpleado>
 
 foreach (var empleado in empleados)
 {
-    
 
     if (empleado is ISueldoBonificable empleadoBonificable)
     {
@@ -26,7 +18,6 @@ foreach (var empleado in empleados)
     }
     empleado.CalcularSueldo();
     empleado.MostrarDetalles();
-
 
     Console.WriteLine();
 }
