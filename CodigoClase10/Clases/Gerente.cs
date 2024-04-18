@@ -41,7 +41,7 @@ namespace CodigoClase10.Clases
             //Console.WriteLine($"Nombre: {Nombre}, ID Empleado: {IdEmpleado}, Puesto: {Puesto}, SueldoNeto: {SueldoNeto}, Bonificación: {Bonificacion}");
         }
 
-        public void DescontarSueldo()
+        public void CalcularDescuento()
         {
             Descuento = SueldoBase * Constante.Descuento2;
         }

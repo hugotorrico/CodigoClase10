@@ -25,7 +25,7 @@ foreach (var empleado in empleados)
     }
     if (empleado is IDescuentoImpuesto empleadoDescontado)
     {
-        empleadoDescontado.DescontarSueldo();
+        empleadoDescontado.CalcularDescuento();
     }
     empleado.CalcularSueldo();
     empleado.MostrarDetalles();

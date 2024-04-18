@@ -25,7 +25,7 @@ namespace CodigoClase10.Clases
             SueldoNeto = SueldoBase + Bonificacion -Descuento;
         }
 
-        public void DescontarSueldo()
+        public void CalcularDescuento()
         {
             Descuento = SueldoBase * Constante.Descuento1;
 

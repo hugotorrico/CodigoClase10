@@ -8,6 +8,6 @@ namespace CodigoClase10.Interfaces
 {
     public interface IDescuentoImpuesto
     {
-        public void DescontarSueldo();
+        public void CalcularDescuento();
     }
 }
