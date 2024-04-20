@@ -18,8 +18,16 @@ namespace CodigoClase10.Clases
 
 
         public void CalcularBonificacion()
-        {          
-            Bonificacion = Constante.Bonificacion2;
+        {
+            try
+            {
+                Bonificacion = Constante.Bonificacion2;
+            }
+            catch (Exception)
+            {
+                throw new CalcularBonificacionExcepcion();
+            }
+           
         }
        
         public override void CalcularSueldo()

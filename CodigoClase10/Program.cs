@@ -38,6 +38,10 @@ try
    
 
 }
+catch (CalcularBonificacionExcepcion ex)
+{
+    Console.WriteLine(ex.Mensaje);
+}
 catch (CalcularSueldoExcepcion ex)
 {
     Console.WriteLine(ex.Mensaje);
