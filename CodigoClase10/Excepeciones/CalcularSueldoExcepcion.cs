@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CodigoClase10.Excepeciones
+{
+    public class CalcularSueldoExcepcion: Exception
+    {
+        public string Mensaje { get; set; }
+
+        public CalcularSueldoExcepcion()
+        {
+            Mensaje = "Disculpe, Error en Calcular Sueldo";
+        }
+    }
+}

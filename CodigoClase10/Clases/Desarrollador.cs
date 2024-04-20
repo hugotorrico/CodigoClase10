@@ -13,7 +13,17 @@ namespace CodigoClase10.Clases
 
         public override void CalcularSueldo()
         {
-            SueldoNeto = SueldoBase;
+            try
+            {
+                SueldoNeto = SueldoBase;
+            }
+            catch (Exception)
+            {
+                throw new Exception("Disculpe, Error en Calcular Sueldo");
+
+                
+            }
+           
         }
 
         public override string ObtenerTipoEmpleado()

@@ -1,5 +1,6 @@
 ﻿using CodigoClase10.Abstractas;
 using CodigoClase10.Estaticas;
+using CodigoClase10.Excepeciones;
 using CodigoClase10.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -22,7 +23,18 @@ namespace CodigoClase10.Clases
 
         public override void CalcularSueldo()
         {
-            SueldoNeto = SueldoBase + Bonificacion -Descuento;
+            try
+            {
+                int numero = 12;
+                int divisor = 0;
+                int resultado = numero / divisor;
+                SueldoNeto = SueldoBase + Bonificacion - Descuento;
+
+            }
+            catch (Exception)
+            {
+                throw new CalcularSueldoExcepcion();
+            }
         }
 
         public void CalcularDescuento()

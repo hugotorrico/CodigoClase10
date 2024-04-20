@@ -1,4 +1,5 @@
 ﻿using CodigoClase10.Abstractas;
+using CodigoClase10.Excepeciones;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,15 @@ namespace CodigoClase10.Clases
 
         public override void CalcularSueldo()
         {
-            SueldoNeto = SueldoBase;
+            try
+            {
+                SueldoNeto = SueldoBase;
+            }
+            catch (Exception)
+            {
+                throw new CalcularSueldoExcepcion();
+            }
+          
         }
 
         public override string ObtenerTipoEmpleado()
